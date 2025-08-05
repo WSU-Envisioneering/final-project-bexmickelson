@@ -41,4 +41,41 @@ main {
   button:hover {
     background-color: #002b59;
   }
+  .navbarmain {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbarmain a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .navbarmain a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  
+  .navbarmain a:hover {
+    color: #ffdd57;
+  }
+  
+  .navbarmain a:hover::after {
+    width: 100%;
+  }
   
